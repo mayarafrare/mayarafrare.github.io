@@ -29,17 +29,49 @@ body {
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
     text-align: center;
     font-family: "Lexend Deca", serif;
-    background-color: lavender;
+    background-color: #DBD3FA;
     .meuNome {font-family: "Lexend Deca", serif}
     .descricao {font-family: 'Poppins', sans-serif;
-    text-align: center, justify;}
+    text-align: center, justify;
+    line-height: 1.6;}
     .resido {font-family: 'Poppins', sans-serif;}
 }
-h2 {font-family: "Lexend Deca", serif}
+#foto {
+    border: 30px solid #E5446D;
+    background-color: rgb(150, 215, 255);
+transition: 1s;
+}
+#foto:hover { 
+border: 30px solid gold;
+background-color: rgb(150, 215, 255);
+transition: 1s;
+}
+h2 {font-family: "Lexend Deca", serif;
+background-color: gold;
+border: 10px solid #E5446D;
+box-shadow: 6px 8px grey;}
 ul {
+    list-style-position: inside;
     line-height: 1.8;
     font-family: "Lexend Deca", serif
 }
+#menudebaixo {
+        padding: 0;
+        background-color: #E5446D;
+    }
+    #menudebaixo ul li {
+        display: inline;
+    }
+    #menudebaixo ul li a {
+        color: white;
+        padding: 20px;
+        display: inline-block;
+        text-decoration: none;
+        transition: background .6s;
+    }
+    #menudebaixo li a:hover {
+        background-color: gold;
+    }
 
     </style>
 </head>
@@ -52,7 +84,7 @@ ul {
     </nav>
 <h1 class="meuNome">Mayara Frare</h1>
 <img src="fotomayara.jpg" alt="Foto da Mayara Frare" id="foto" width="300px">
-<p id="sobremim" class="descricao"> <strong><em>Olá, me chamo Mayara Frare, </em></strong> <br> Tenho 24 anos, sou casada e tenho uma filha de 3 anos chamada Luna. <br> Eu amo aprender coisas novas e de assuntos diversos, e há algum tempo visava a área de TI <br> E graças a Trybe estou realizando este sonho de virar desenvolvedora e conseguir ter uma formação <br> E futuramente uma profissão que me traga estabilidade na vida e segurança financeira, <br> Que quando se tem filhos é o que você mais procura. <br> Então estou começando essa trilha do curso de Desenvolvedor Full-Stack com meu macbook e um sonho hahahahaha. <br> Este é meu primeiro portfolio e espero que quem veja ache bonitinho, ou simpático. <br> Obrigada por ler até aqui e até mais! </p>
+<p id="sobremim" class="descricao"> <strong><em><font size="5">Olá, me chamo Mayara Frare, </font></em></strong> <br>Tenho 24 anos, sou casada e tenho uma filha de 3 anos chamada Luna. <br> Eu amo aprender coisas novas e de assuntos diversos, e há algum tempo visava a área de TI <br> E graças a Trybe estou realizando este sonho de virar desenvolvedora e conseguir ter uma formação <br> E futuramente uma profissão que me traga estabilidade na vida e segurança financeira, <br> Que quando se tem filhos é o que você mais procura. <br> Então estou começando essa trilha do curso de Desenvolvedor Full-Stack com meu macbook e um sonho hahahahaha. <br> Este é meu primeiro portfolio e espero que quem veja ache bonitinho, ou simpático. <br> Obrigada por ler até aqui e até mais! </p>
 <p class="resido"> <strong>Sou de Bento Gonçalves no Rio Grande do Sul<br> </strong></p>
 <h2>Lista de Habilidades</h2>
 <ul>
@@ -68,8 +100,12 @@ ul {
     <li class="manutencao-de-celulares">Manutenção de Celulares</li>
     <li class="desenvolvedora"><em>Desenvolvedora Full-Stack em andamento</em></li>
 </ul>
-<a href="#foto">Minha Foto</a>
-<a href="https://www.instagram.com/mayarafrare/" id="pagina" target="_blank">Meu Instagram</a>
+<nav id="menudebaixo">
+    <ul>
+    <li><a href="#foto">Minha Foto</a></li>
+    <li><a href="https://www.instagram.com/mayarafrare/" id="pagina" target="_blank">Meu Instagram</a></li>
+    </ul>
+</nav>
     
 </body>
 </html>
