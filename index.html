@@ -8,6 +8,23 @@
           href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap">
     <style>
 body {
+    #menu {
+        padding: 0;
+        background-color: #E5446D;
+    }
+    #menu ul li {
+        display: inline;
+    }
+    #menu ul li a {
+        color: white;
+        padding: 20px;
+        display: inline-block;
+        text-decoration: none;
+        transition: background .6s;
+    }
+    #menu li a:hover {
+        background-color: gold;
+    }
     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@300&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
     text-align: center;
@@ -27,8 +44,12 @@ ul {
     </style>
 </head>
 <body>
-<a href="#sobremim">Sobre mim</a>
-<a href="#pagina">Página que eu Gosto</a>
+    <nav id="menu"> 
+        <ul>
+        <li><a href="#sobremim">Sobre mim</a></li>
+        <li><a href="#pagina">Página que eu Gosto</a></li>
+        </ul>
+    </nav>
 <h1 class="meuNome">Mayara Frare</h1>
 <img src="fotomayara.jpg" alt="Foto da Mayara Frare" id="foto" width="300px">
 <p id="sobremim" class="descricao"> <strong><em>Olá, me chamo Mayara Frare, </em></strong> <br> Tenho 24 anos, sou casada e tenho uma filha de 3 anos chamada Luna. <br> Eu amo aprender coisas novas e de assuntos diversos, e há algum tempo visava a área de TI <br> E graças a Trybe estou realizando este sonho de virar desenvolvedora e conseguir ter uma formação <br> E futuramente uma profissão que me traga estabilidade na vida e segurança financeira, <br> Que quando se tem filhos é o que você mais procura. <br> Então estou começando essa trilha do curso de Desenvolvedor Full-Stack com meu macbook e um sonho hahahahaha. <br> Este é meu primeiro portfolio e espero que quem veja ache bonitinho, ou simpático. <br> Obrigada por ler até aqui e até mais! </p>
